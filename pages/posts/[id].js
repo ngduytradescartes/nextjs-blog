@@ -10,8 +10,8 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
         <meta property="og:title" content={postData.title} />
-        <meta property="og:description" content={postData.title} />
-        <meta property="og:image" content={postData.thumnail} />
+        <meta property="og:description" content={postData.date} />
+        <meta property="og:image" content={postData.thumnail} key="image" />
         <meta property="og:image:width" content="828" />
         <meta property="og:image:height" content="434" />
       </Head>
